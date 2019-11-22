@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* { /*border:dotted thin black;*/
+	margin: 0;
+	padding: 0;
+}
+
+
+/* HER STARTER MOBILE **********************************************************/
+
+body {background-color: #DAC5B4;
+
+}
+
+#wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 0.75em;
+	margin: 0 2em;
+
+}
+
+/*
+header {
+	grid-column: 1 / 15;
+	text-align: center;
+}
+
+nav {
+	grid-column: 1 / 15;
+
+
+}
+*/
+
+.header {
+	width: 100%
+}
+
+.header nav {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 0.75em;
+	box-shadow: 0 1em 1em -1em rgba(0,0,0,0);
+	padding: 1em 1em;
+	margin-bottom: 1em;
+
+/*
+ /* LØSNING 1*/
+	max-width: 100%;
+
+
+}
+
+.header nav ul {
+	list-style-type: none;
+	padding-left: none;
+	grid-column: 3 / 5;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.heaeder nav ul li {
+	display: inline-block;
+}
+
+/*
+h1 {
+	grid-column: 1 / 5;
+	text-align: center;
+	padding-top: 0.25em;
+	padding-bottom: 1em;
+	font-family: "helvetica", thin, sans-serif;
+}
+*/
+
+header{
+	grid-column: 1 / 5;
+	text-align: center;
+	padding-top: 0.5em;
+	font-family: "helvetica", thin, sans-serif;
+}
+
+
+section {
+	grid-column: 1 / 5;
+
+}
+
+section article {
+	grid-column: 1 / 5;
+	padding: 0 2em;
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+	border-bottom: 1px solid #dbe0de;
+}
+
+
+footer {
+	box-shadow: 0em 1em 1em -0.5em rgba(0,0,0,.2);
+	padding: 1em 1em;
+	margin-top: 2em;
+	text-align: center;
+	grid-column: 1 / 5;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+	background-color: transparent;
+  text-decoration: none;
+}
+
+/* HER slutter mobile **********************************************************/
+
+/* HER STARTER DESKTOP **********************************************************/
+
+@media only screen and (min-width: 700px) {
+
+
+body {background-color: #DAC5B4;
+}
+
+#wrapper {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 0.75em;
+	margin: 5em 2em;
+	padding-top: 10em;
+
+}
+
+/*
+header {
+	grid-column: 1 / 15;
+	text-align: center;
+}
+
+nav {
+	grid-column: 1 / 15;
+
+
+}
+*/
+
+.header {
+	width: 100%
+	display: flex;
+}
+
+.header nav {
+	display: grid;
+	background-color: white;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 0.75em;
+	box-shadow: 0 1em 1em -1em rgba(0,0,0,.2);
+	margin-bottom: 1em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+/*
+ /* LØSNING 1*/
+	max-width: 100%;
+
+
+}
+
+.header nav ul {
+	list-style-type: none;
+	padding-left: none;
+	grid-column: 10 / 12;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	float: left;
+}
+
+.heaeder nav ul li {
+	display: inline-block;
+}
+
+header nav h1{
+	grid-column: 2 / 4;
+	text-align: left;
+
+
+}
+
+header{
+	grid-column: 1 / 13;
+	text-align: center;
+	padding-top: 0.5em;
+	font-family: "helvetica", thin, sans-serif;
+}
+
+
+section {
+	grid-column: 2 / 12;
+	display: flex;
+}
+
+section article {
+	grid-column: 2 / 12;
+	padding: 0 1em;
+	font-family: "helvetica", thin, sans-serif;
+	border-bottom: 0;
+}
+
+section article h2 {
+	text-align: center;
+}
+
+section article p {
+	text-align: center;
+}
+
+footer {
+	box-shadow: 0em -1em 1em -0.5em rgba(0,0,0,.2);
+	padding: 1em 1em;
+	text-align: center;
+	grid-column: 1 / 13;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+	background-color: transparent;
+  text-decoration: none;
+}
+
+}
+
+/* HER slutter DESKTOP **********************************************************/
